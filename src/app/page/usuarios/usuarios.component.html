@@ -1,0 +1,37 @@
+
+<div class="table-t">
+
+    <form [formGroup]="userForm" (ngSubmit)="guardar($event)" method="POST">
+        <div id="formulario">
+            <h1> Crear Usuario </h1>
+        </div>
+
+        <div id="tabla-formulario">
+            <label for="nombre">Nombres</label>
+            <input placeholder="Ingrese su nombre..." formControlName="nombre" type="text" id="tabla1">
+
+            <label for="cedula">Cedula </label>
+            <input placeholder="Escriba cedula" formControlName="cedula" type="text" id="tabla2">
+
+            <label for="celular">Celular </label>
+            <input placeholder="Escriba celular" formControlName="celular" type="text" id="tabla3">
+
+            <label for="direccion">Direccion </label>
+            <input placeholder="Escriba direccion" formControlName="direccion" type="text" id="tabla4">
+
+            <label for="email">Email </label>
+            <input placeholder="Escriba email" formControlName="email" type="text" id="tabla5">
+
+            <label for="contrasena">Contrasena </label>
+            <input placeholder="Escriba contrasena" formControlName="contrasena" type="password" id="tabla6">
+
+        </div>
+        <button name="registro" type="submit" class="btn btn-danger btn-sm m-2" id="button"> 
+            
+            <a class="btn btn-danger btn-sm m-2" routerLink="/singup">¡Registrarse!</a>
+        </button>
+        
+    </form>
+</div>
+
+< <!-- <a href="./../ingresar/poke/poke.component.html">CREAR POKEMON</a> -->

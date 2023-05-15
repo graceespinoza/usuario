@@ -1,0 +1,38 @@
+<div class="table-t">
+
+    <form [formGroup]="reserForm" (ngSubmit)="guardar($event)" method="POST">
+        <div id="formulario">
+            <h1> Formulario de Reserva </h1>
+        </div>
+
+        <div id="tabla-formulario">
+            <label for="tipo">Tipo</label>
+            <input placeholder="Ingrese su Tipo..." formControlName="tipo" type="text" id="tabla1">
+
+            <label for="estado">Estado </label>
+            <select  aria-label="estado" formControlName="estado" id="tabla">Estado
+                <option> Disponible</option> 
+            </select> 
+
+
+            <label for="hora">Hora </label>
+            <input placeholder="Escriba precio" formControlName="hora" type="time" id="tabla3">
+
+          
+            <label for="fecha">Fecha </label>
+            <input placeholder="Escriba Tipo de inmueble" formControlName="fecha" type="date" id="tabla5">
+
+            <label for="inmub">Tipo de Inmueble </label>
+            <select  aria-label="inmub" formControlName="inmueble" id="tabla"> Descripcion
+                <option [ngValue]="item" *ngFor="let item of reserva" 
+                [selected]="pokemonSelect?.inmueble?.id_inmueble == item.id_inmueble" id="tabla">
+                        {{item.tipo_inmueble}}
+                </option>
+            </select>
+
+        </div>
+        <button name="registro" type="submit" class="btn btn-danger btn-sm m-2"  id="button"> ¡Registrarse! </button>
+
+        
+    </form>
+</div>

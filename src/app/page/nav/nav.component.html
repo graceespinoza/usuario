@@ -1,0 +1,95 @@
+
+        <div class="wrapper"> 
+<!-- <!-- Top menu -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" alt="profile_picture">
+            <h3>Bienvenido</h3>
+            <p>Administrador</p>
+        </div>
+        <ul>
+            <li>
+                <a routerLink="/inmueble"  class="active">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Listado y Eliminacion</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-desktop"></i></span>
+                    <span class="item">Registro </span>
+                </a>
+            </li> -->
+            <li>
+                <a routerLink="/reserva" href="#">
+                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                    <span class="item">Reservar </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                    <span class="item">Listado</span>
+                </a>
+            </li>
+           
+        </ul> 
+     
+       
+    </div> 
+
+</div>
+
+<div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+    </div> 
+
+
+    <!-- <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav
+          #drawer
+          class="sidenav"
+          fixedInViewport
+          [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+          [mode]="(isHandset$ | async) ? 'over' : 'side'"
+          [opened]="(isHandset$ | async) === false"
+        >
+          <mat-toolbar>Menu</mat-toolbar>
+          <mat-nav-list>
+            <a mat-list-item routerLink="/page">
+                <mat-icon>bubble_chart</mat-icon> Principal</a
+              >
+            <a mat-list-item routerLink="/page/inmueble"><mat-icon>Inmueble</mat-icon> Inmueble</a>
+            <a mat-list-item routerLink="/admin/categories">
+              <mat-icon>category</mat-icon> Categoría</a>
+              <a mat-list-item routerLink="/admin/basic">
+                <mat-icon>category</mat-icon> BASIC FORM</a>
+           
+          </mat-nav-list>
+        </mat-sidenav>
+      
+        <mat-sidenav-content>
+          <mat-toolbar color="primary">
+            <button
+              type="button"
+              aria-label="Toggle sidenav"
+              mat-icon-button
+              (click)="drawer.toggle()"
+              *ngIf="isHandset$ | async"
+            >
+              <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <span>platzi-store</span>
+          </mat-toolbar>
+          <!-- Add Content Here -->
+          <!-- <router-outlet></router-outlet>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+       --> -->
